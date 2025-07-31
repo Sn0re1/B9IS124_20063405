@@ -1,0 +1,7 @@
+{
+  "name": "RealYou",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

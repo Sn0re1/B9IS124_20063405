@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RealYou</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-content">
+    <!-- <div class="weather-info">
+      <h2>Weather for {{weather.location || '...' }}</h2>
+      <p>{{weather.temp}} °C - {{weather.description}}</p>
+    </div> -->
+    <div class="welcome-message">
+      <h1>Welcome to RealYou</h1>
+      <p>Your journey to self-discovery starts here.</p>
+    </div>
+
+    <ion-button expand="block" (click)="generateQuote()">Generate Motivation</ion-button>
+
+    <div *ngIf="currentQuote" class="quote">
+      "{{currentQuote}}"
+    </div>
+  </div>
+</ion-content>
